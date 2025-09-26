@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Jose - Full-Stack Developer</title>
+    <!-- Inter Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+        }
+        /* Custom colors from your palette */
+        :root {
+            --color-primary: #1E293B;
+            --color-secondary: #F8FAFC;
+            --color-accent: #FB923C;
+            --color-supporting-white: #FFFFFF;
+            --color-medium-gray: #64748B;
+        }
+        .text-primary { color: var(--color-primary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .bg-accent { background-color: var(--color-accent); }
+        .text-white { color: var(--color-supporting-white); }
+        .bg-white { background-color: var(--color-supporting-white); }
+        .text-medium-gray { color: var(--color-medium-gray); }
+        .bg-medium-gray { background-color: var(--color-medium-gray); }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm transition-all duration-300">
+        <nav class="container mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-primary">Riya Jose</a>
+            <div class="flex items-center space-x-6">
+                <a href="#about" class="text-medium-gray hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="text-medium-gray hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="text-medium-gray hover:text-primary transition-colors">Contact</a>
+                <!-- Secondary CTA: Download Resume -->
+                <a href="#" class="hidden sm:inline-block bg-accent text-white px-4 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105 shadow-md">Download Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-primary text-white py-24 md:py-32 h-screen flex items-center">
+            <div class="container mx-auto px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+                    Hey there! I'm Riya Jose
+                </h1>
+                <p id="typed-text" class="text-xl md:text-2xl font-medium text-white/90 min-h-[3rem]"></p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <!-- Primary CTA -->
+                    <a href="#projects" class="bg-accent text-white px-8 py-3 rounded-xl font-bold transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">View My Work</a>
+                    <!-- Secondary CTA -->
+                    <a href="#contact" class="bg-white text-primary px-8 py-3 rounded-xl font-bold transition-transform duration-300 transform hover:scale-105 hover:shadow-lg">Let's Build Something</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white py-24 md:py-32">
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-primary">The Human Behind the Code</h2>
+                    <p class="text-medium-gray mt-4 max-w-2xl mx-auto">Get to know me a little better.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="w-full md:w-1/3 mb-10 md:mb-0">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-6 text-center transform transition-transform duration-300 hover:scale-105">
+                             <!-- Placeholder Image with responsive size -->
+                            <img src="https://placehold.co/400x400/1E293B/F8FAFC?text=Riya+Jose" alt="Riya Jose" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-accent">
+                            <h3 class="text-2xl font-bold text-primary">Meet Riya Jose</h3>
+                            <p class="text-medium-gray mt-2">Full-Stack Developer</p>
+                            <span class="inline-block bg-accent text-white text-sm font-semibold px-4 py-1 rounded-full mt-4">Currently Available</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <div class="bg-secondary rounded-2xl p-8 shadow-xl">
+                            <h3 class="text-3xl font-bold text-primary mb-4">A Bit About Me</h3>
+                            <p class="text-medium-gray leading-relaxed">
+                                Hey there! I'm Riya Jose – a passionate full-stack developer who loves turning wild ideas into pixel-perfect reality. Currently crushing my BTech (Class of 2028), but I've been coding since before it was cool to have "developer" in your bio.
+                                My superpower? Building seamless web experiences that make users go "wow, that just works!" From crafting responsive frontends with React and Vue to architecting robust backends with Python and Django, I speak fluent code in multiple dialects.
+                                When I'm not debugging at 2 AM (okay, maybe I am), you'll find me exploring the latest web technologies, creating digital designs in Illustrator, or helping teams bring their visions to life through clear communication and solid project management.
+                                I believe great software isn't just about clean code – it's about solving real problems for real people. Ready to build something amazing together?
+                            </p>
+                        </div>
+                        <div class="mt-8 bg-white rounded-2xl p-8 shadow-xl">
+                            <h3 class="text-2xl font-bold text-primary mb-4">My Technical Toolbox</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">JavaScript</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">React</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">Python</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">Django</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">Node.js</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">Tailwind CSS</span>
+                                <span class="bg-accent/10 text-accent font-semibold px-4 py-2 rounded-full text-sm">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-secondary py-24 md:py-32">
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-primary">From Concept to Code</h2>
+                    <p class="text-medium-gray mt-4 max-w-2xl mx-auto">A showcase of things I've built and problems I've solved.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/FB923C/1E293B?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Project 1: [Title]</h3>
+                            <p class="text-medium-gray mb-4">[Brief description of the project goes here. What problem did it solve?]</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">React</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">Node.js</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">MongoDB</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">Live Demo</a>
+                                <a href="https://github.com/riyaajose" class="bg-medium-gray/20 text-primary px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/1E293B/F8FAFC?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Project 2: [Title]</h3>
+                            <p class="text-medium-gray mb-4">[Brief description of the project goes here. What problem did it solve?]</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">Vue.js</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">Python</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">Django</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">Live Demo</a>
+                                <a href="https://github.com/riyaajose" class="bg-medium-gray/20 text-primary px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/64748B/FFFFFF?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary mb-2">Project 3: [Title]</h3>
+                            <p class="text-medium-gray mb-4">[Brief description of the project goes here. What problem did it solve?]</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">HTML</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">CSS</span>
+                                <span class="bg-primary/10 text-primary font-medium px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-accent text-white px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">Live Demo</a>
+                                <a href="https://github.com/riyaajose" class="bg-medium-gray/20 text-primary px-5 py-2 rounded-lg font-semibold transition-transform duration-300 transform hover:scale-105">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-24 md:py-32">
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-primary">Let's Create Together</h2>
+                    <p class="text-medium-gray mt-4 max-w-2xl mx-auto">I'm currently available for new opportunities. Get in touch!</p>
+                </div>
+                <div class="max-w-xl mx-auto bg-secondary rounded-2xl p-8 shadow-xl">
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-medium-gray mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl border border-medium-gray/30 focus:outline-none focus:border-accent transition-colors" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-medium-gray mb-2">Your Email</label>
+                            <input type="email" id="email" name="_replyto" class="w-full px-4 py-3 rounded-xl border border-medium-gray/30 focus:outline-none focus:border-accent transition-colors" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-medium-gray mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-xl border border-medium-gray/30 focus:outline-none focus:border-accent transition-colors" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white px-6 py-3 rounded-xl font-bold transition-transform duration-300 transform hover:scale-[1.01] hover:shadow-lg">Send Message</button>
+                    </form>
+                    <div class="flex justify-center space-x-6 mt-8">
+                        <a href="mailto:riyajose794@gmail.com" class="text-medium-gray hover:text-primary transition-colors">Email</a>
+                        <a href="https://github.com/riyaajose" class="text-medium-gray hover:text-primary transition-colors">GitHub</a>
+                        <a href="https://linkedin.com/in/your-profile" class="text-medium-gray hover:text-primary transition-colors">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-6 lg:px-8 text-center text-sm text-white/70">
+            <p>&copy; 2024 Riya Jose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Typing animation for the hero section
+        const typedTextElement = document.getElementById('typed-text');
+        const phrases = [
+            "Full-Stack Developer & Digital Problem Solver",
+            "Crafting Web Experiences That Actually Work",
+            "Code + Creativity = Digital Magic ✨"
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            const displayText = currentPhrase.substring(0, charIndex);
+
+            typedTextElement.textContent = displayText;
+
+            if (!isDeleting && charIndex < currentPhrase.length) {
+                charIndex++;
+                setTimeout(type, 100);
+            } else if (isDeleting && charIndex > 0) {
+                charIndex--;
+                setTimeout(type, 50);
+            } else {
+                isDeleting = !isDeleting;
+                phraseIndex = !isDeleting ? (phraseIndex + 1) % phrases.length : phraseIndex;
+                setTimeout(type, 1000);
+            }
+        }
+        window.onload = function () {
+            type();
+        };
+
+        // Header shrinking on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-lg');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.remove('py-2', 'shadow-lg');
+                header.classList.add('py-4');
+            }
+        });
+    </script>
+</body>
+</html>
